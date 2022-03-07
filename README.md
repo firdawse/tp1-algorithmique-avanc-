@@ -117,14 +117,14 @@ afficherTableau(&c,taille);
 //fonction qui calcule le nombre de COMPOSANTS réalisé par un fabricant
    
 int nbrFabricant(COMPOSANTS *c ,char fabricant[],int taille){
-	int n=0;
-	int i=0;
-	for(i=0;i<taille;i++){
-		//strcmp est une fonction qui revoie 0 si les chaines de caractère sont les memes 
-		if(strcmp(fabricant,c[i].fabricant)==0){
-			n++;
-		}
+int n=0;	
+int i=0;
+for(i=0;i<taille;i++){
+//strcmp est une fonction qui revoie 0 si les chaines de caractère sont les memes 
+ if(strcmp(fabricant,c[i].fabricant)==0){
+	n++;
 	}
+}
 return n;	
 }
 
@@ -135,31 +135,31 @@ return n;
 
 int nbrComposant (COMPOSANTS *c,char classe1[],char classe2[],int taille){
 	 
-	int n=0;
-	int i;
-	for(i=0;i<taille;i++){
-		if(strcmp(classe1,c[i].classe)==0||strcmp(classe2,c[i].classe)==0){
-			n++;
-		}
+int n=0;
+int i;
+for(i=0;i<taille;i++){
+	if(strcmp(classe1,c[i].classe)==0||strcmp(classe2,c[i].classe)==0){
+		n++;
 	}
+}
 return n;	
 }
 ```
 ## Ecrire une fonction qui affiche les composants fabriqués entre deux dates d1 et d2.
 ```c
 int composantsEntreDates (COMPOSANTS*c,DATE d1,DATE d2,int taille){
-	int n=0;
-    int i;
-   //pour comparer les dates on passe d'abord par comparer les années passant par les mois puis les jours 
-	for(i=0;i<taille;i++){
-		if(c[i].datefab.annee>=d1.annee&&c[i].datefab.annee<=d2.annee){
-			if(c[i].datefab.mois>=d1.mois&&c[i].datefab.mois<=d2.mois){
-				if(c[i].datefab.jour>=d1.jour&&c[i].datefab.jour<=d2.jour){
-			     n++;
-			}
+int n=0;
+int i;
+//pour comparer les dates on passe d'abord par comparer les années passant par les mois puis les jours 
+for(i=0;i<taille;i++){
+  if(c[i].datefab.annee>=d1.annee&&c[i].datefab.annee<=d2.annee){
+	if(c[i].datefab.mois>=d1.mois&&c[i].datefab.mois<=d2.mois){
+	        if(c[i].datefab.jour>=d1.jour&&c[i].datefab.jour<=d2.jour){
+	               n++;
 		}
 	}
-	}
+   }
+}
 return n;
 }
 ```
