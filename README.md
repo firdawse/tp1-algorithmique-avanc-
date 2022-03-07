@@ -1,5 +1,5 @@
 # Algorithmique et programmation avancée 
-## Série de TP 1 : Pr:AMAMOU Ahmed
+## Série de TP 1  :  Pr.AMAMOU Ahmed
 ### Objectif : Manipulation des structures
 
 Dans une unité d'assemblage des ordinateurs, les composants électroniques utilisés peuvent être réalisés par plusieurs fabricants. Selon le mode de communication, les composants sont regroupés par classes (PCI, ISA,...). Pour une meilleure organisation, la direction opte de représenter les informations techniques de ces composants par un tableau de structures et de les gérer par un programme C. on suppose qu'un composant est caractérisé par un Code, un Nom, une Classe, un Fabricant, une date de fabrication (Date fab).
