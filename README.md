@@ -184,7 +184,7 @@ DATE d1={2,12,2002};
 printf("\n le nbr de composants realises par firdawse est %d \n",nbrFabricant(&c ,"firdawse",taille));
 
 //nbr de composants de deux classes
-printf("le nbr de composants des deux classe pci et isa est %d  \n",nbrComposant (&c,"pci","isa",taille));
+printf("le nbr de composants des deux classes pci et isa est %d  \n",nbrComposant (&c,"pci","isa",taille));
 
 //affichage de composants fabriqués entre deux dates
 printf("le nbr de composants entre d1 et d2 est %d ",composantsEntreDates (&c,d1,d2,taille));
