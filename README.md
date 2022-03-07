@@ -9,9 +9,9 @@ Dans une unité d'assemblage des ordinateurs, les composants électroniques util
 ```c
 //définir les structures date et composants 
 typedef struct {
-int jour ;
-int mois;
-int annee;
+    int jour ;
+    int mois;
+    int annee;
 }DATE;
 
 typedef struct {
