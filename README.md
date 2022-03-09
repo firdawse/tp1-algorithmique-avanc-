@@ -100,19 +100,18 @@ void afficherTableau(COMPOSANTS *c ,int taille){
 int main (){
 
 DATE d;
-COMPOSANTS c;
 int taille =2;
 
 //déclaration d'un tableau dynamique de composants 
 COMPOSANTS *t =malloc(taille*sizeof(COMPOSANTS));
 
 //saisie du tableau de composant
-tableauComposants(&c,taille);
+tableauComposants(&t,taille);
 
 //affichage du tableau de composants
-afficherTableau(&c,taille);
+afficherTableau(&t,taille);
 ```
-## Ecrire une fonction qui calcule le nombre de composants réalisés par un fabricant donne.
+## Ecrire une fonction qui calcule le nombre de composants réalisés par un fabricant donne
 ```c
 //fonction qui calcule le nombre de COMPOSANTS réalisé par un fabricant
    
